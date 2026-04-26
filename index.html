@@ -113,16 +113,26 @@
       </ol>
     </section>
 
-    <section class="section proof">
+    <section class="section proof proof-showcase">
       <div class="section-head">
         <p class="eyebrow">Rendu</p>
         <h2>Un rendu professionnel, pas un simple texte brut</h2>
+        <p>Des documents structurés, visuels et prêts à présenter : dossier, présentation, budget ou synthèse.</p>
       </div>
-      <div class="proof-grid image-proof-grid">
-        <article class="proof-card"><img src="assets/mockup.document.png" alt="Mockup de document professionnel structuré" /><div><h3>Sommaire structuré</h3><p>Un dossier clair avec sections, logique et contenu organisé.</p></div></article>
-        <article class="proof-card"><img src="assets/mockup.slides.png" alt="Mockup de présentation premium" /><div><h3>Slides premium</h3><p>Une présentation moderne, lisible et adaptée à vos objectifs.</p></div></article>
-        <article class="proof-card"><img src="assets/mockup.budget.png" alt="Mockup de tableau budget professionnel" /><div><h3>Tableau budget</h3><p>Des informations chiffrées mieux présentées et plus faciles à comprendre.</p></div></article>
-        <article class="proof-card"><img src="assets/mockup.summary.png" alt="Mockup de synthèse projet professionnelle" /><div><h3>Synthèse projet</h3><p>Une vue globale prête à partager avec vos partenaires ou décideurs.</p></div></article>
+      <div class="showcase">
+        <div class="showcase-tabs" role="tablist" aria-label="Types de rendu">
+          <button class="showcase-tab active" type="button" data-img="assets/mockup.document.png" data-title="Sommaire structuré" data-text="Un dossier clair avec sections, logique et contenu organisé."><span>01</span><strong>Sommaire structuré</strong><small>Dossier clair et organisé</small></button>
+          <button class="showcase-tab" type="button" data-img="assets/mockup.slides.png" data-title="Slides premium" data-text="Une présentation moderne, lisible et adaptée à vos objectifs."><span>02</span><strong>Slides premium</strong><small>Présentation professionnelle</small></button>
+          <button class="showcase-tab" type="button" data-img="assets/mockup.budget.png" data-title="Tableau budget" data-text="Des informations chiffrées mieux présentées et plus faciles à comprendre."><span>03</span><strong>Tableau budget</strong><small>Chiffres structurés</small></button>
+          <button class="showcase-tab" type="button" data-img="assets/mockup.summary.png" data-title="Synthèse projet" data-text="Une vue globale prête à partager avec vos partenaires ou décideurs."><span>04</span><strong>Synthèse projet</strong><small>Vue globale prête à envoyer</small></button>
+        </div>
+        <div class="showcase-preview">
+          <img id="showcaseImage" src="assets/mockup.document.png" alt="Sommaire structuré" />
+          <div class="showcase-caption">
+            <h3 id="showcaseTitle">Sommaire structuré</h3>
+            <p id="showcaseText">Un dossier clair avec sections, logique et contenu organisé.</p>
+          </div>
+        </div>
       </div>
     </section>
 
