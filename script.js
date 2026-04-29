@@ -36,3 +36,35 @@ if(tabs.length){
 
   startAuto();
 }
+
+const conversionDestination = 'AW-18123917652/G025COa2-s0qENSS1MUD';
+
+function openTrackedLink(url) {
+  if (typeof gtag !== 'function') {
+    window.location.href = url;
+    return;
+  }
+
+  let redirected = false;
+
+  function redirect() {
+    if (!redirected) {
+      redirected = true;
+      window.location.href = url;
+    }
+  }
+
+  gtag('event', 'conversion', {
+    send_to: conversionDestination,
+    event_callback: redirect
+  });
+
+  setTimeout(redirect, 800);
+}
+
+document.querySelectorAll('a[href^="https://wa.me/221777989238"]').forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    openTrackedLink(link.href);
+  });
+});
